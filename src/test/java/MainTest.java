@@ -1,6 +1,6 @@
+import org.example.entity.Employee;
 import org.example.Main;
 import org.example.WordCounter;
-import org.example.entity.Employee;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -67,10 +67,10 @@ public class MainTest {
         assertEquals(list.get(0).getFirstname(), "Burak");
     }
 
-    @DisplayName("calculatedWord method doğru çalışıyor mu?")
+    @DisplayName("calculateWord method doğru çalışıyor mu?")
     @Test
     public void testCalculateWordMethod() {
-        Map<String, Integer> map = WordCounter.calculatedWord();
+        Map<String, Integer> map = WordCounter.calculateWord();
         assertEquals(map.get("which"), 3);
         assertEquals(map.get("turkish"), 2);
         assertEquals(map.get("mustafa"), 3);
